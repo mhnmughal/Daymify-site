@@ -1,0 +1,73 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  width: 100%;
+  max-width: 250px;
+  border-top: 0.5px solid rgb(235, 235, 235);
+  background-color: #f8f9fa; /* Light background for the sidebar */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+  position: relative; /* Needed for absolute positioning of toggle button */
+}
+
+.sidebar_toggle {
+  display: none; /* Hide toggle button by default */
+  cursor: pointer; /* Change cursor to pointer */
+  font-size: 24px; /* Icon size */
+  padding: 10px;
+  color: #343a40; /* Icon color */
+}
+
+.sidebar_item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start for better spacing */
+  padding: 0px 20px; /* Better padding */
+  border-radius: 6px;
+  background: transparent; /* Set to transparent for hover effect */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.sidebar_item:hover {
+  background: #e2e6ea; /* Light grey background on hover */
+  transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+.sidebar_item svg {
+  font-size: 24px; /* Slightly larger icons */
+  color: #343a40; /* Darker color for icons */
+}
+
+.sidebar_item p {
+  color: #343a40; /* Consistent color with icons */
+  margin: 10px;
+  margin-left: 15px; /* More space between icon and text */
+  font-weight: 500; /* Slightly bolder text */
+  font-size: 16px; /* Slightly larger font */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .sidebar {
+      position: absolute; /* Position the sidebar absolutely */
+      left: -250px; /* Start hidden off-screen */
+      transition: left 0.3s ease; /* Smooth slide-in transition */
+  }
+
+  .sidebar.open {
+      left: 0; /* Show the sidebar */
+  }
+
+  .sidebar_toggle {
+      display: block; /* Show toggle button on smaller screens */
+      position: absolute; /* Position toggle button */
+      top: 10px; /* Adjust positioning */
+      left: 10px; /* Adjust positioning */
+  }
+
+  .sidebar_item {
+      justify-content: center; /* Center items when sidebar is open */
+  }
+}

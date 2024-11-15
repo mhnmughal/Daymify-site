@@ -1,0 +1,66 @@
+.pi-card {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 1.5em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pi-title {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.pi-content {
+    display: grid;
+    gap: 1em;
+}
+
+.pi-field {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75em;
+    background: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.pi-label {
+    font-weight: 500;
+    color: #555;
+}
+
+.pi-value {
+    color: #333;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: right;
+}
+
+.pi-field:nth-child(even) {
+    background: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+    .pi-card {
+        padding: 1em;
+        width: auto;
+    }
+    .pi-title {
+        font-size: 1.3em;
+    }
+    .pi-field {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .pi-value {
+        font-size: 0.9em;
+        margin-top: 0.2em;
+    }
+}

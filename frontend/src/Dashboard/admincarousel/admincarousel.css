@@ -1,0 +1,122 @@
+
+.admin-carousel-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 30px; /* Add margin for better spacing */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form input[type="file"] {
+    margin-bottom: 10px;
+    padding: 8px; /* Improved padding for better UX */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+form textarea{
+    width: 100%;
+    margin: 1em 0;
+    font-family: sans-serif;
+}
+
+form select {
+    margin-bottom: 10px; /* Consistent spacing with file input */
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%; /* Full width for better layout */
+    max-width: 300px; /* Limit width for large screens */
+}
+
+form button {
+    padding: 10px 20px; /* Better padding for button */
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    
+    transition: background-color 0.3s, transform 0.2s; /* Added transform for scale effect */
+}
+
+
+form button:hover {
+    background-color: #218838;
+    transform: scale(1.05); /* Slightly scale button on hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+li:hover {
+    background-color: #e9ecef; /* Light background on hover */
+}
+
+.carousel-image {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px;
+    border-radius: 4px; /* Round image corners */
+}
+
+button.delete-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.delete-button:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 600px) {
+    .admin-carousel-container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    form button {
+        width: 100%; /* Full width button on small screens */
+    }
+
+    form select {
+        width: 100%; /* Full width select on small screens */
+    }
+
+    .carousel-image {
+        width: 80px; /* Smaller image size on small screens */
+    }
+}

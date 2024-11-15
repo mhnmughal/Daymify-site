@@ -1,0 +1,37 @@
+.ordersuccess {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 40px;
+    text-align: center;
+}
+
+.success-icon {
+    margin-bottom: 20px;
+}
+
+.ordersuccess h2 {
+    color: #444;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.ordersuccess p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.view-orders-btn {
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.view-orders-btn:hover {
+    background-color: #1e1e1e;
+}

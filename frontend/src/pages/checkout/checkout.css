@@ -1,0 +1,158 @@
+/* General styles for checkout component */
+.checkout {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    gap: 20px;
+}
+
+.shippingbox {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%; 
+    box-sizing: border-box; 
+}
+
+.shippingbox input, 
+.shippingbox select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; 
+}
+
+.shippingbox h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.shippingbox div {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.shippingbox input[type="number"] {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.shippingbox input:focus, 
+.shippingbox select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.shippingbox select {
+    cursor: pointer;
+}
+
+.shippingbox .fa-home {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    font-size: 1.2rem;
+    color: #888;
+}
+
+.shippingbox input[type="text"].fa-home {
+    padding-left: 40px;
+}
+
+/* Styles for saved address box */
+.saved-address-box {
+    border: 2px dashed #444; 
+    background-color: #e7f0ff; 
+    padding: 15px;
+    margin: 15px 0; 
+    border-radius: 5px;
+}
+
+.saved-address-box p {
+    margin: 5px 0; /* Small margin for paragraphs */
+}
+
+.sa,.saved-address-box button {
+    background-color: #444; /* Button color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.saved-address-box button:hover {
+    background-color: #2b2b2b; /* Darker shade on hover */
+}
+
+/* Styles for the right section (cart total) */
+.ch-right {
+    width: 350px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cartitem-total {
+    width: 100%;
+}
+
+.ct-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.ct-item p,
+.ct-item h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.ct-item h3 {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.ct-item hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+}
+
+.cl button {
+    width: 100%;
+    padding: 12px;
+    background-color: #444;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cl button:hover {
+    background-color: #2b2b2b;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .checkout {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .ch-right{
+        width: inherit;
+    }
+}

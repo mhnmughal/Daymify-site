@@ -1,0 +1,95 @@
+.admin-promo-code {
+  padding: 30px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-form-title, .validate-title, .promo-codes-title {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.create-form, .validate-section, .promo-codes-list {
+  margin-bottom: 25px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.create-code-group, .create-discount-group, .create-expiration-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.create-code-label, .create-discount-label, .create-expiration-label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.create-code-input, .create-discount-input, .create-expiration-input, .validate-input {
+  width: calc(100% - 20px);
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.create-code-input:focus, .create-discount-input:focus, .create-expiration-input:focus, .validate-input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.create-submit-button, .validate-button {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #4CAF50;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-submit-button:hover, .validate-button:hover {
+  background-color: #45a049;
+}
+
+.promo-codes-ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.promo-code-item {
+  background: #ffffff;
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo-code-text {
+  font-weight: bold;
+  color: #333;
+}
+
+.promo-expiration {
+  font-size: 0.85em;
+  color: #888;
+}
+
+.no-promo-message, .validation-message {
+  color: #888;
+  font-size: 0.9em;
+}

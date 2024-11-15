@@ -1,0 +1,121 @@
+/* General client container styling */
+.client-container {
+  padding: 15px; /* Reduced padding */
+  font-family: Arial, sans-serif;
+  max-width: 400px; /* Reduced max-width for smaller size */
+  width: 90%; /* Keeps it responsive */
+  height: 80vh;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Slightly reduced border radius */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+  background-color: #f9f9f9; /* Softer background */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+/* client Close button styling */
+.client-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Adjusted for smaller size */
+  font-size: 18px; /* Reduced font size */
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.client-close-btn:hover {
+  color: #ff4d4d; /* Red highlight on hover */
+}
+
+/* client Headings */
+
+.client-container h2 {
+  font-size: 1.5em; /* Responsive font size */
+  font-weight: bold;
+  margin-bottom: 7px; /* Adjusted margin */
+  color: #333;
+}
+
+.client-container h3 {
+  font-size: 1.25em; /* Responsive font size */
+  margin: 2px 0; /* Adjusted margin */
+  color: #444;
+}
+
+/* client Order info */
+.client-order-info p {
+  font-size: 0.9em; /* Reduced font size for better scaling */
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  margin: 3px 0; /* Adjusted margin */
+}
+
+.client-status {
+  color: green;
+  font-weight: bold;
+  font-size: 0.9em; /* Adjusted font size */
+}
+
+/* client Order details section */
+.client-order-details {
+  border-top: 1px solid #e0e0e0; /* Visual divider */
+}
+
+.client-o-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1px; /* Adjusted margin */
+}
+
+.client-o-details p {
+  font-size: 0.9em; /* Adjusted font size */
+}
+
+/* client Shipping info section */
+.client-shipping-info {
+  border-top: 1px solid #e0e0e0; /* Visual divider */
+}
+
+.client-shipping-info p {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  font-size: 0.9em; /* Adjusted font size */
+  gap: 2em; /* Adjusted gap for better spacing */
+  margin: 0;
+}
+
+/* Add responsive styling for smaller screens */
+@media (max-width: 600px) {
+  .client-container {
+    padding: 10px; /* Further reduced padding for small screens */
+    max-width: 90%; /* Ensures it occupies more space */
+    border-radius: 5px; /* Smaller border radius */
+  }
+
+  .client-order-info p, .client-shipping-info p, .client-o-details p {
+    font-size: 0.8em; /* Further reduced font size */
+  }
+  
+
+  .client-container h3 {
+    font-size: 1em; /* Further reduced heading size */
+    margin: 0;
+  }
+  .client-container h2 {
+    font-size: 1em; /* Further reduced heading size */
+  }
+}
+
+/* Additional media query for tablets */
+@media (max-width: 768px) {
+  .client-container {
+    max-width: 80%; /* Increase max-width for tablets */
+  }
+}

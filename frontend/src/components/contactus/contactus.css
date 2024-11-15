@@ -1,0 +1,64 @@
+.contact-us-container {
+    max-width: 100%;
+    margin: 70px 5%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.customer-service-info {
+    margin-bottom: 20px;
+}
+
+.customer-service-info p {
+    margin: 5px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.name-container input {
+    flex: 1; /* Allow inputs to take equal width */
+    padding: 10px;
+}
+
+.other-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+.other-form input,
+.other-form textarea {
+    width: 100%; /* Set all inputs and textareas to full width */
+    padding: 10px; /* Add padding for better appearance */
+    border: 1px solid #ddd; /* Set border for inputs */
+    border-radius: 4px; /* Add border radius */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}

@@ -1,0 +1,150 @@
+/* Login.css */
+.login__auth-container {
+    width: calc(100% - 30px);
+    padding: 70px 0;
+    margin: 0 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.login__box {
+    width: 90%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login__box h1 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login__fields {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.login__fields input {
+    width: 90%;
+    max-width: 320px;
+    height: 45px;
+    padding: 0 15px;
+    border: 1px solid #d3d3d3;
+    border-radius: 25px;
+    font-size: 0.95em;
+    color: #444;
+    background-color: #fafafa;
+    outline: none;
+}
+
+.login__fields input::placeholder {
+    color: #b0b0b0;
+}
+
+.login__box button {
+    width: 90%;
+    max-width: 320px;
+    height: 50px;
+    margin-top: 25px;
+    font-size: 1em;
+    color: #ffffff;
+    background: #444;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.login__switch {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 0.85em;
+    color: #444;
+}
+
+.login__switch span {
+    color: #00509d;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.login__agree {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+    font-size: 0.85em;
+    color: #666;
+}
+
+.login__my-account {
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+.login__main {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.login__left-nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+
+.login__link {
+    font-size: 1em;
+    color: #555;
+}
+
+.login__link--active h4 {
+    color: #444;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.login__left-nav h4 {
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .login__box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .login__fields input {
+        height: 45px;
+        padding-left: 15px;
+    }
+
+    .login__my-account {
+        font-size: 1.2em;
+    }
+
+    .login__left-nav .login__link h4 {
+        font-size: 0.95em;
+    }
+}

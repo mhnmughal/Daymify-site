@@ -1,0 +1,68 @@
+.payment {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.payment h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.payment-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+.payment-option {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.payment-option:hover, .payment-option.selected {
+    background-color: #444;
+    color: white;
+}
+
+.payment-option p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.payment-summary {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #262626;
+}

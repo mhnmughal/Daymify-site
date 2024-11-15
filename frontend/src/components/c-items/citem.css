@@ -1,0 +1,30 @@
+.citem {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+.citem img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 18em; /* Set a maximum width */
+    object-fit: cover; /* Ensure the image covers the box nicely */
+}
+
+.citem p {
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) { /* Tablets or smaller screens */
+    .citem img {
+        max-width: 18em; /* Reduce maximum width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile screens */
+    .citem img {
+        max-width: 14em; /* Further reduce maximum width on very small screens */
+    }
+}

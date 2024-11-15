@@ -1,0 +1,223 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    top: 1.5em;
+    left: 0;
+    z-index: 100;
+    background-color: #f1f6ebcf;
+    transition: top 0.5s ease-out, 0.5s ease;
+}
+
+.navbar.scrolled {
+   top: 0;
+   background-color: #f1f6eb;
+}
+
+.child-nav {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    padding: 0.7em 0;
+    margin: 0 auto;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 25%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.menu svg,
+.right svg {
+    font-size: 1.3em;
+}
+
+.search {
+    display: none;
+    align-items: center;
+    border: 0.8px solid black;
+    background: #fff;
+}
+
+.search input {
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 2rem;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+.middle a{
+    display: flex;
+    align-items: center;
+}
+.middle img {
+    height: 2.2em;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 1.5em;
+}
+
+.account,
+.cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subcart {
+    display: flex;
+    align-items: center;
+}
+
+.subcart span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    font-weight: 800;
+    margin: 0 0 -1em -0.7em ;
+    background-color: #f1f6eb;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+}
+
+/* Menu Overlay */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+
+.menu-overlay.open {
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.sub-overlay {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    padding: 10px 20px;
+}
+.menu-header svg {
+    font-size: 1em;
+}
+.close-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.menu-items {
+    list-style: none; /* Remove bullet points */
+    width: 100%;
+    padding: 0;
+    color: black;
+}
+
+.menu-items li {
+    list-style-type: none; /* Ensure no bullet points */
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+    font-size: 1.2em;
+    border: none;
+    background-color: inherit;
+}
+
+.menu-items li a {
+    color: black; /* Link color */
+    text-decoration: none; /* Remove underline */
+    display: block; 
+    padding: 5px; 
+    transition: background-color 0.3s;
+   
+}
+
+.menu-items li a:hover {
+    background-color: #f0f0f0; /* Optional: Change background on hover */
+}
+
+/* Backdrop */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+.menubottom {
+    background-color: #f1f6eb;
+    width: 90%;
+    height: 100%;
+    padding-left: 10%;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.b-d{
+    display: flex;
+    gap: 1em;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .menu-overlay {
+        width: 80%;
+    }
+
+    .menu span,
+    .account span,
+    .tcart {
+        display: none;
+    }
+    .child-nav {
+        padding: 0.3em 0;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-overlay {
+        width: 30%;
+    }
+}

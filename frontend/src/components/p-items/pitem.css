@@ -1,0 +1,40 @@
+.pitem{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.pitem img{
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: auto; /* Set a maximum width */
+    object-fit: cover;
+}
+.pitem p{
+    font-size: 1em;
+    margin-bottom: 0;
+}
+.prices{
+    display: flex;  
+    justify-content: left;
+    gap: 1em;
+}
+.prices :first-child{
+    color: rgb(26, 26, 26);
+    text-decoration: line-through;
+    font-size: 0.9em;
+}
+.prices :last-child{
+    color: black;
+    font-size: 1em;
+}
+@media (max-width: 768px) { /* Tablets or smaller screens */
+    .citem img {
+        max-width: 18em; /* Reduce maximum width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile screens */
+    .citem img {
+        max-width: 14em; /* Further reduce maximum width on very small screens */
+    }
+}

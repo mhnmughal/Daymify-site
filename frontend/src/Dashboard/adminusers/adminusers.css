@@ -1,0 +1,164 @@
+.admin-users-container {
+    width: 100%;
+    margin: 0 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.admin-users-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.admin-users-table {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+}
+
+.admin-users-table th, 
+.admin-users-table td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.admin-users-table th {
+    background-color: #444;
+    color: white;
+    font-weight: 600;
+}
+
+.admin-users-table th, 
+.admin-users-table td {
+    min-width: 110px;
+    max-width: 20%;
+}
+
+.table-row:hover {
+    background-color: #f1f5f8;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button, 
+.delete-button,
+.save-button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.save-button {
+    background-color: green;
+}
+
+.edit-button:hover, 
+.delete-button:hover,
+.save-button:hover {
+    background-color: black;
+}
+
+.delete-button {
+    background-color: red;
+}
+
+/* Input styles */
+input, select {
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type="text"], 
+input[type="email"] {
+    font-size: 14px;
+}
+
+/* Confirmation Dialog Styles */
+.confirm-delete {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+}
+
+.confirm-button {
+    background-color: #d9534f; /* Bootstrap danger color */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.confirm-button:hover {
+    background-color: #c9302c; /* Darker shade on hover */
+}
+
+.cancel-button {
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-button:hover {
+    background-color: rgb(195, 195, 195); /* Darker color on hover */
+}
+
+/* Edit Modal Styles */
+.edit-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: left;
+}
+
+.edit-modal h3 {
+    margin-bottom: 15px;
+}
+
+.edit-modal label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.edit-modal input,
+.edit-modal select {
+    width: calc(100% - 12px); /* Adjust for padding */
+    margin-bottom: 10px;
+}
+
+.save-button,
+.cancel-button {
+    margin-right: 10px;
+}

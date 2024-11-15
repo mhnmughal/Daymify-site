@@ -1,0 +1,28 @@
+:root {
+  font-family: "Orator W01 Medium";
+  line-height: 1.5;
+  font-weight: 400;
+
+ 
+}
+body{
+  margin: 0;
+ background-color: #f6f1ebba;
+}
+/* Add custom styles for the link */
+.cl {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits the div color */
+  cursor: pointer;
+}
+
+.cl:hover,
+.cl:focus {
+  outline: none; /* Removes the default blur effect */
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+

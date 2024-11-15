@@ -1,0 +1,83 @@
+.loader-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f1f6eb;
+}
+
+.loading-animation {
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: #444;
+    border-radius: 50%;
+    animation: bounce 0.5s alternate infinite ease;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.shadow-effect {
+    width: 20px;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    animation: shrink 0.5s alternate infinite ease;
+}
+
+.shadow-effect:nth-child(4) {
+    left: 0;
+    animation-delay: 0.1s;
+}
+
+.shadow-effect:nth-child(5) {
+    left: calc(50% - 10px);
+    animation-delay: 0.2s;
+}
+
+.shadow-effect:nth-child(6) {
+    right: 0;
+    animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes shrink {
+    from {
+        transform: scaleX(1);
+    }
+    to {
+        transform: scaleX(0.6);
+    }
+}
+
+h2 {
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #555;
+    font-size: 1.5em;
+}

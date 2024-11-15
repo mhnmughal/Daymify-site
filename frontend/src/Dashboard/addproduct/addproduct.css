@@ -1,0 +1,185 @@
+.add-product {
+  width: 100%;
+  margin: 0 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.addproduct-itemfield {
+  margin-bottom: 15px; /* Ensure this does not cause excessive spacing */
+}
+
+.addproduct-itemfield p {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.addproduct-itemfield input,
+.addproduct-itemfield textarea,
+.addproduct-itemfield select {
+  width: -webkit-fill-available; /* This can be improved for better cross-browser compatibility */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  color: #333;
+}
+
+.addproduct-price {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* This should be accounted for in child widths */
+}
+
+.addproduct-price .addproduct-itemfield {
+  width: 48%; /* Ensure this plus gap does not exceed 100% */
+}
+
+.add-product-selector {
+  appearance: none;
+  background-color: #fff;
+  padding-right: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+textarea {
+  resize: none; /* Consider setting a height for usability */
+  height: 100px; /* Example height */
+}
+
+.addproduct-itemfield .image-preview-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.addproduct-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.addproduct-row .addproduct-itemfield {
+  width: 48%; /* Ensure this width works with flexbox gaps */
+}
+.addproduct-row2{
+  display: flex;
+  margin: 1em 0;
+}
+.addproduct-itemfield2{
+display: flex;
+gap: 2em;
+}
+
+.image-preview-edit {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.image-preview-edit img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.remove-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 18px;
+  color: red;
+  cursor: pointer;
+}
+
+.image-previews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.image-previews img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.upload-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  color: #333;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.upload-box:hover {
+  background-color: #f1f1f1;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.addproduct-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addproduct-btn:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.addproduct-btn:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .addproduct-price {
+    flex-direction: column;
+  }
+
+  .addproduct-price .addproduct-itemfield {
+    width: 100%; /* Ensure full width on smaller screens */
+  }
+
+  .addproduct-row {
+    flex-direction: column; /* Ensure rows stack */
+  }
+
+  .addproduct-row .addproduct-itemfield {
+    width: 100%; /* Ensure full width on smaller screens */
+  }
+}

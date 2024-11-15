@@ -1,0 +1,268 @@
+.cart-page{
+    background-color: #f1f6eb;
+    margin-top: 70px;
+}
+
+/*if empty cart*/
+.emptycart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.emptycart svg {
+    font-size: 2em;
+}
+
+.emptycart button {
+    text-align: center;
+    width: 12em;
+    height: 58px;
+    outline: none;
+    border: none;
+    background: #444;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+.cartitem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2em 0;
+}
+
+.sub-cartitem {
+    width: 90%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 1.4em;
+    padding-bottom: 2em;
+
+}
+
+.cartitem-cart {
+    background-color: #fffcf7;
+
+}
+
+.main-format {
+    border-bottom: 1px solid #d5d5d5;
+    max-width: 100%;
+    padding: 1.2em 1em;
+}
+
+.cartitem-format {
+    display: flex;
+    width: 100%;
+    gap: 1em;
+}
+
+.mi {
+    max-width: 5.5em;
+}
+
+.dside {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.name {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.name span {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.d-q {
+    display: flex;
+    border: 1px solid rgb(57, 57, 57);
+    border-radius: 0.2em;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 0.3em;
+}
+
+.tprice {
+    text-align: right;
+}
+
+.cs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-cs{
+    width: 90%;
+}
+.sub-cs h4{
+    font-size: 1.4em;
+    font-weight: 500;
+    margin: 1.2em 0;
+    border-bottom: 1px solid #d5d5d5;
+}
+.cntct{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 1.6em;
+    border-bottom: 1px solid #d5d5d5;
+    margin-bottom: 1.6em;
+}
+.cntct p:first-child{
+    gap: 1em;
+    text-decoration: underline;
+}
+
+.cartitem-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fffcf7;
+    padding-bottom: 2em;
+}
+
+.sub-down {
+    width: 90%;
+}
+
+.cartitem-total {
+    width: 90% !important;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ct-item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.cartitem-total button {
+    text-align: center;
+    width: 70%;
+    height: 58px;
+    outline: none;
+    border: none;
+    background: #444;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    gap: 12px;
+}
+
+.cartitem-total button svg {
+    font-size: 20px;
+}
+
+.ct-promoCode {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.ct-promoCode p {
+    margin-top: 0;
+    color: #555;
+}
+
+.ct-promoBox {
+    display: flex;
+    margin-top: 15px;
+    height: 50px;
+    background-color: #eaeaea;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.ct-promoBox input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    height: 50px;
+}
+
+.ct-promoBox button {
+    width: 130px;
+    height: 50px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin: 0;
+}
+
+@media (max-width: 748px) {
+    .sub-cartitem {
+        display: flex;
+        flex-direction: column;
+        width:98%;
+    }
+
+    .cartitem-cart {
+        width: 100%;
+    }
+
+    .cartitem-down {
+        width: 100%;
+        align-items: center;
+    }
+
+    .sub-down {
+        width: 95%;
+    }
+
+    .cartitem-total button {
+        width: 100%;
+    }
+
+    .name {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .sub-1 {
+        gap: 5px;
+    }
+
+    .quantity-controls svg {
+        height: 15px;
+        width: 15px;
+    }
+
+    .cartitem-format svg {
+        margin: 0;
+    }
+    .emptycart {
+        margin: 2em 0;
+    }
+}
